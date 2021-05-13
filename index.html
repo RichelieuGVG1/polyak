@@ -6,9 +6,10 @@
 		*{font-family: arial;}
 		#main{
 			display: none;
-			padding: 20px 20px;
+			
 			font-size: 50px;
 		}
+		#main1{padding: 20px 20px;}
 		form{
 			display: flex;
 			justify-content: center;
@@ -39,6 +40,7 @@
 			color: gray;
 			font-size: 25px;
 		}
+		figure{padding: 0; margin-top: -140px;}
 	</style>
 	<script type="text/javascript">
 		function check() {if (document.getElementById(1).value == '1415'){document.getElementById("main").style.display="block";document.getElementById("flex").style.display="none";}else{alert('Ты ввёл неверный пароль!');}}
@@ -51,9 +53,16 @@
    		<p><input type="button" value="Проверить" onclick="check()"></p>
 	</form>
 <div id='main'>
-	Ну вот, Леха, ты уже близок к финалу. Теперь садись на любой транспорт и немедленно поезжай в лицей, помни, ты должен прибыть туда <b>не позднее 14:45</b>.<br><br>По приезду у тебя будет новая задача, она заключается в поиске моей карточки, по которой ты пройдешь в лицей. Я буду ждать тебя внутри.<br><br>
+	<p id='main1'>
+	Ну вот, Леха, ты уже близок к финалу. Теперь садись на любой транспорт и немедленно поезжай в лицей, помни, ты должен прибыть туда <b>не позднее 14:45</b>.<br><br>По приезду у тебя будет новая задача, она заключается в поиске моей карточки, по которой ты пройдешь в лицей. Я буду ждать тебя внутри.
+	</p>
+
+	<br><br>
 	<figure><img src="https://c.files.bbci.co.uk/12A9B/production/_111434467_gettyimages-1143489763.jpg"><figcaption><i>Вот здесь спрятан конверт с картой</i></figcaption></figure>
+
+	<p id='main1'>
 	Карточка спрятана под одной из этих лавочек. Садись на самую дальнюю и загляни под лавку. Извлеки конверт. <b>Его возьми с собой!</b> Достань карту и направляйся ко входу. Морда кирпичом, уверенная походка, легкое движение руки к турникету — и ты в здании.<br><br>Добро пожаловать в лицей, мой друг!
+	</p>
 </div>
 </body>
 </html>
