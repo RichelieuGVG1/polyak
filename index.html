@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>КВЕСТ ДЛЯ ЛЕХИ</title>
+	<style type="text/css">
+		*{font-family: arial;}
+		#main{
+			display: none;
+			margin-left: 10px;
+			margin-right: 10px;
+			font-size: 20px;
+		}
+		form{
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			align-items: center;
+
+			font-size: 40px;
+
+		}
+		input{
+			width: 200px;
+			height: 30px;
+			font-size: 30px;
+		}
+		input[type=button]{
+			font-size: 20px;
+		}
+	</style>
+	<script type="text/javascript">
+		function check() {
+			if (document.getElementById(1).value == '1415'){
+
+				document.getElementById("main").style.display="block";
+				document.getElementById("flex").style.display="none";
+			}
+			else{
+				alert('Ты ввел неверный пароль!');
+			}
+    		
+    }
+	</script>
+</head>
+<body>
+	<form action="submits" id='flex'>
+   		<label for="fname">Введи пароль:</label><br>
+  		<input type='text' placeholder="123456" required id='1' value='1415'>
+   		<p><input type="button" value="Проверить" onclick="check()"></p>
+	</form>
+<p id='main'>
+	Ну, Леха, вот ты и подходишь к финалу. Теперь садись на любой транспорт и немедленно поезжай в лицей; помни, ты должен прибыть туда не позднее 14:45. 
+</p>
+</body>
+</html>
